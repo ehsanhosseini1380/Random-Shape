@@ -5,8 +5,8 @@ function getRandomArbitrary(min, max) {
 }
 //creating shapes defined as div when page mounted on screen .giving every shape a random hex color,width and height.
 window.onload = function() {
-
-    for (let i = 0; i < getRandomArbitrary(10, 30); i++) {
+    var counter=getRandomArbitrary(10, 30);
+    for (let i = 0; i < counter; i++) {
         var newdiv = document.createElement("div");
         var randomColor = Math.floor(Math.random() * 16777215).toString(16);
 
